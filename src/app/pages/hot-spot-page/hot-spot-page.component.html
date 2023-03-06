@@ -1,0 +1,29 @@
+<div class="parallax"></div>
+
+<div style="height: 1000px; background-color: rgb(27, 27, 27); font-size: 36px">
+  <h1 style="color: white; padding-top: 20px; padding-left: 20px">
+    Top Destination
+  </h1>
+  <div class="container text-center" style="margin-top: 30px">
+    <div class="row">
+      <div class="col" *ngFor="let item of spotdata">
+        <!--card 1 -->
+        <div
+          class="card"
+          style="background-color: rgb(71, 71, 71); width: 18rem; height: 400px"
+        >
+          <img src="{{ item.img }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title" style="color: white">
+              {{ item.name }}
+            </h5>
+            <p class="card-text fs-6" style="color: white">
+              {{ item.msg }}
+            </p>
+            <a href="#" class="btn btn-dark">visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
